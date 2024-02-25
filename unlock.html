@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa ải đầu tiên</title>
+    <link rel="icon" type="image/x-icon" href="img/wine.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="bg"></div>
+    <div class="container">
+        <div class="form-field">
+            <input type="password" id="input" placeholder="Nhập đúng mới được qua">
+        </div>
+        <div class="form-field">
+            <button class="btn" type="submit" id="btn">click</button>
+        </div>
+    </div>
+
+    <script>
+        let inp;
+        document.getElementById("btn").onclick = function(){
+            inp = document.getElementById("input").value;
+            if(inp == "28"){
+                location.href = "page1.html";
+            }
+            else{
+              alert("Sai bét!");
+                console.log(inp);
+            }
+        }
+    </script>
+</body>
+</html>
